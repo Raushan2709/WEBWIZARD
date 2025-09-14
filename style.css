@@ -1,0 +1,420 @@
+:root{
+    --background-color: #2d2a3e;
+    --primary-color: #c48ec3;
+    --secondary-color: #0aae4e;
+    --primary-text-color: #fff;
+    --primary-secondary-color: #757185;
+    --miss-primary-color: #736bbd;
+    --miss-secondary-color: #725956;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    background-color: var(--background-color);
+    width: 100vw;
+}
+
+.main-wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right{
+    display: flex;
+    gap: 2rem;
+}
+
+.company-logo{
+    font-size: 1.3rem;
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+
+.header-right a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* .company-logo span{
+    color: ;
+} */
+
+.front{
+    max-width: 1280px;
+    width: 100%;
+    margin-top: -1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.front-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-top p{
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    opacity: 0.9;
+}
+
+.front-top p:nth-child(2) {
+    color: var(--miss-primary-color);
+}
+
+/* .front-top p span{
+    color: ;
+} */
+
+.front-desc{
+    max-width: 38%;
+    margin-top: 1em;
+    color: var(--primary-text-color);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.front-desc{
+    text-align: center;
+}
+
+/* .front-desc p:nth-child(2) {
+    color: ;
+} */
+
+.front-btn{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5em;
+}
+
+.front-btn div{
+    padding: 0.4em 2em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.front-btn div:nth-child(1) {
+    background: linear-gradient(90deg , var(--miss-primary-color), var(--primary-color));
+    color: white; 
+}
+
+.front-btn div:nth-child(2) {
+    border: 1px solid rgba(117, 113, 133, 0.2);
+    color: var(--primary-text-color);
+    background-color: rgba(117, 113, 133, 0.1)
+}
+
+.front-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.front-bottom p{
+    color: var(--primary-text-color);
+    opacity: 0.7;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.front-bottom div{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    color: var(--primary-text-color);
+}
+
+.front-bottom div span{
+    padding: 0.3em 1em;
+    border: 1px solid rgba(117, 113, 133, 0.2);
+    color: var(--primary-text-color);
+    background-color: rgba(117, 113, 133, 0.1);
+    border-radius: 0.8em;
+    cursor: pointer;
+}
+
+.skill{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.skill-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    opacity: 0.8;
+}
+
+.skill-card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    color: var(--primary-text-color);
+}
+
+.skill-card-wrapper div{
+    border: 1px solid var(--primary-secondary-color);
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.skill-card-wrapper div p:nth-child(1) {
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skill-card-wrapper div p:nth-child(2) {
+    font-size: 0.8rem;
+    color: var(--primary-secondary-color);
+}
+
+.skill-card-wrapper div div{
+    padding: 0;
+    width: 100%;
+    height: 7px;
+    position: relative;
+}
+
+.skill-card-wrapper div:hover{
+    cursor: pointer;
+}
+
+.skill-card-wrapper div span{
+    font-size: 0.7rem;
+}
+
+.loader-1::after{
+    content: "";
+    width: 95%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-2::after{
+    content: "";
+    width: 90%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-3::after{
+    content: "";
+    width: 85%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-4::after{
+    content: "";
+    width: 88%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-5::after{
+    content: "";
+    width: 75%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-6::after{
+    content: "";
+    width: 70%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-7::after{
+    content: "";
+    width: 72%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-8::after{
+    content: "";
+    width: 92%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-9::after{
+    content: "";
+    width: 89%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-10::after{
+    content: "";
+    width: 90%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-11::after{
+    content: "";
+    width: 85%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.loader-12::after{
+    content: "";
+    width: 80%;
+    background: linear-gradient(to right, var(--miss-primary-color), var(--primary-color));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+
+.form-section{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.form-title-desc p:nth-child(1){
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.form-title-desc p:nth-child(2) {
+    font-size: 0.9rem;
+    color: var(--primary-text-color);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    background-color: rgba(45, 42, 62, 0.4);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    border-radius: 1.2em;
+    width: 50%;
+}
+
+.input-box{
+    display: flex;
+    gap: 1em;
+}
+
+.user-input{
+    width: 50%;
+}
+
+.user-input P{
+    color: var(--primary-text-color);
+}
+
+.user-input input{
+    width: 100%;
+    background-color: rgba(117, 113, 133, 0.5);
+    outline: none;
+    border: none;
+    border-radius: 0.7em;
+    padding: 0.5em;
+    color: white;
+}
+
+textarea{
+    width: 100%;
+    height: 10em;
+    background-color: rgba(117, 113, 133, 0.5);
+    outline: none;
+    border: none;
+    border-radius: 0.7em;
+    padding: 0.5em;
+    color: white;
+}
